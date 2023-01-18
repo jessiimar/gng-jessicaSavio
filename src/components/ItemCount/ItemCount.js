@@ -4,16 +4,13 @@ const ItemCount = ({ stock }) => {
     const [count, setCount]= useState(0)
 
     const decrement = () => {
-        setCount(prev => prev - 1)
+        setCount(count  - 1)
     }
 
     const increment = () => {
-        for(let i = 0; i < 1; i++) {
-            setCount(prev => {
-                console.log(prev)
-                console.log(count)
-                return prev + 1
-            });
+        for(let i = 0; i < 5; i++) {
+            setCount(count + 1
+            );
         }
         return
     }
